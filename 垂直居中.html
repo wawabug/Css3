@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>多行垂直居中</title>
+    <!--<link rel="stylesheet" type="text/css" href="../Public/Css/base.css"/>-->
+    <style>
+    body{
+    	margin: 0px;
+    }
+	    .wrap{
+	    	margin-top: 60px;
+	    	
+	    }
+	    
+	    
+	    /* 右边为 logo 类型*/
+	    .parent{
+	    	padding-right: 15px;
+	    	border-bottom: 1px solid #dfdfdf;
+    		border-top: 1px solid #dfdfdf;
+	    }
+    	.bar{
+    		padding: 10px 35px 10px 15px;
+    		vertical-align: middle;
+    		background: url(../Public/Images/shwenjuan/first.png) no-repeat;
+    		background-size: 25px 25px;
+    		background-position: right center;
+    	}
+    	
+    	
+    	.left{
+    		display: block;
+    		width: 100%;
+    	}
+    	.price{
+    		font-size: 14px;
+    		color: green;
+    		display: table-cell;
+    		vertical-align: middle;
+    	}
+    	
+    	
+    	/* 左右结构  多行上下居中  右边文字 上下居中 */
+    	
+    	.bar1{
+    		padding: 10px 15px;
+    		margin-top: 20px;
+    		position: relative;
+    		border-bottom: 1px solid #dfdfdf;
+    		border-top: 1px solid #dfdfdf;
+    		/*padding-right: 20%;*/
+    	}
+    	.text{
+    		/*float: left;*/
+    		display: block;
+    		width: 80%;
+    	}
+    	.price_box{
+    		position: absolute;
+    		right: 0px;
+    		top: 50%;
+    		width: 20%;
+    		padding-right: 15px;
+    	}
+    	.price{
+    		width: 100%;
+    		display: block;
+    		box-sizing: border-box;
+    		padding: 10px 25px 10px 0px;
+    		margin-top: -16px;
+    		text-align: right;
+    		background: url(../Public/Images/shwenjuan/first.png) no-repeat;
+    		background-size: 15px 15px;
+    		background-position: right center;
+    	}
+    	
+    	.bar3{
+    		text-align: left;
+    		margin-top: 20px;
+    		padding: 10px 20% 10px 15px;
+    		position: relative;
+    		border-bottom: 1px solid #dfdfdf;
+    		border-top: 1px solid #dfdfdf;
+    	}
+    	.right_bar{
+    		position: absolute;
+    		right: 15px;
+    		top: 50%;
+    	}
+    	.inner{
+    		display: block;
+    		color: red;
+    		font-size: 14px;
+    		margin-top:-10px;
+    	}
+    	
+    	@media only screen and (max-width:320px ) {
+    		.wrap{
+    			padding-bottom: 30px;
+    		}
+    	}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    	
+    	<!--右边为 logo 类型 -->
+    	<div class="parent">
+    		<div class="bar">
+				<span class="left">我是小黑不黑我是小黑不黑我是小黑不黑我是小黑不黑我是小黑不黑我是小黑不黑我是小黑不黑我是小黑不黑</span>
+			</div>
+    	</div>
+    	
+    	
+    	<!--右边为文字类型-->
+		<div class="bar1">
+			<!--左边文字-->
+			<span class="text">我是小黑不黑我是小黑不黑我是小黑不黑小黑不黑我是小黑不黑我是小黑不黑我是小黑不黑我是小黑不黑黑不黑我是小黑不黑我是小黑不黑我是小黑不黑我是小黑不黑</span>
+			<!--右边小说明-->
+			<div class="price_box clearfix">
+				<span class="price">￥30</span>
+			</div>
+		</div>
+    	
+    	<!--流式布局-->
+		<div class="bar3">
+			是小黑不黑我是小黑不黑我是小黑不黑小黑不黑我是小黑不是小黑不黑我是小黑不黑我是小黑不黑小黑不黑我是小黑不是小黑不黑我是小黑不黑我是小黑不黑小黑不黑我是小黑不是小黑不黑我是小黑不黑我是小黑不黑小黑不黑我是小黑不
+			<div class="right_bar">
+				<span class="inner">￥30</span>
+			</div>
+		</div>
+    </div>
+</body>
+</html>
